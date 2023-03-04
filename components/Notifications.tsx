@@ -7,7 +7,7 @@ const Notifications: React.FC<{ bellIconClickedRef?: any }> = ({
   useEffect(() => {
     // it will automatically open the Notifications when the bell icon is clicked and you change the view
     setShow(bellIconClickedRef);
-  });
+  }, [bellIconClickedRef]);
   return (
     <>
       {show && (
