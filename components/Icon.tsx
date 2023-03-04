@@ -1,11 +1,10 @@
-import { SVGProps } from "react";
 import { getIconD, IconTypes } from "../utils/getIcon";
 
 const Icon: React.FC<{
   id: IconTypes;
-  svgProps: any;
+  svgProps?: any;
   simplePath?: boolean;
-}> = ({ id, svgProps, simplePath = false }) => {
+}> = ({ id, svgProps = {}, simplePath = false }) => {
   return (
     <svg
       {...svgProps}

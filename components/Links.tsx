@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Icon from "./Icon";
 import { IconTypes } from "../utils/getIcon";
 type VariantsType = "ghost" | "disabled";
@@ -8,7 +8,7 @@ interface RouteConfig {
   href: string;
   title: string;
 }
-const initValue: RouteConfig = [
+const initValue: RouteConfig[] = [
   { iconId: "home", href: "/", title: "Home" },
   { iconId: "bars", href: "/testui", title: "Test UI" },
   { iconId: "info", href: "/about", title: "About Us" },
@@ -18,7 +18,7 @@ const Links: React.FC<{
   direction?: "start" | "end";
 }> = ({ variant }) => {
   const [currentHref, setCurrentHref] = useState("");
-  useLayoutEffect(() => {
+  useEffect(() => {
     // alert(window.location.pathname);
     setCurrentHref(window.location.pathname);
   }, []);
