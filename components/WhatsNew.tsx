@@ -13,4 +13,4 @@ const WhatsNew: React.FC<{ open?: boolean }> = ({ open = false }) => {
   );
   return whatsNewCard;
 };
-export const WhatsNew;
+export default WhatsNew;

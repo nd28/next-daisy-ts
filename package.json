@@ -27,5 +27,9 @@
     "next.js",
     "tailwind"
   ],
-  "description": "learning daisy UI and next js"
+  "description": "learning daisy UI and next js",
+  "devDependencies": {
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3"
+  }
 }
