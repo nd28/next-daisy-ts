@@ -5,7 +5,7 @@ const WhatsNew: React.FC<{ open?: boolean }> = ({ open = false }) => {
   const whatsNewCard = (
     <div className="card bg-primary lg:w-fit text-primary-content">
       <div className="card-body">
-        <h2 className="card-title">What's New!!</h2>
+        <h2 className="card-title">What&apos;s New!!</h2>
         <p>
           I have recently created this page called{" "}
           <Link href="/planMyWeekend" className="btn-link text-slate-300">
