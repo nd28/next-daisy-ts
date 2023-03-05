@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
     <div className="card w-96 bg-base-100 shadow-xl image-full">
       <figure>
-        <img
+        <Image
           className="blur-sm"
           src="https://placeimg.com/400/225/arch"
           alt="Shoes"

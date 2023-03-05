@@ -1,10 +1,11 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import WhatsNew from "../components/WhatsNew";
 
 const IndexPage: NextPage = () => {
   return (
-    <div className="card w-80 bg-base-100 shadow-xl image-full">
+    <div className="card bg-base-100 shadow-xl image-full">
       <figure>
         <Image
           fill={true}
@@ -15,17 +16,19 @@ const IndexPage: NextPage = () => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Home Page</h2>
+        <h2 className="card-title text-2xl my-2 inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight text-slate-200">
+          Welcome
+        </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          deleniti labore enim exercitationem illum temporibus, porro tempore
-          qui voluptates id, ipsa neque animi suscipit commodi iste quisquam
-          nesciunt expedita magni?
+          Here, you will be finding new things as I learn more. Most recent
+          UPDATE is right below
         </p>
-        <div className="card-actions justify-end">
-          <Link href="/about" className="btn btn-primary">
+
+        <div className="card-actions justify-center mt-4">
+          <WhatsNew />
+          {/* <Link href="/about" className="btn btn-primary">
             About us
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
