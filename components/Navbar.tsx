@@ -47,6 +47,7 @@ const Navbar: React.FC<{ bellIconClickedRef?: any }> = ({
             >
               <Icon id="bell" />
             </button>
+            {/* <button className=""> */}
           </div>
         </div>
       </div>
