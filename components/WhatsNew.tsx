@@ -3,7 +3,7 @@ import Link from "next/link";
 const WhatsNew: React.FC<{ open?: boolean }> = ({ open = false }) => {
   // Card
   const whatsNewCard = (
-    <div className="card bg-primary lg:w-96 text-primary-content">
+    <div className="card bg-primary lg:w-fit text-primary-content">
       <div className="card-body">
         <h2 className="card-title">What's New!!</h2>
         <p>
