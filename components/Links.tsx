@@ -21,8 +21,13 @@ const Links: React.FC<{
   const [currentHref, setCurrentHref] = useState("");
   useEffect(() => {
     // alert(window.location.pathname);
-    setCurrentHref(window.location.pathname);
-  }, []);
+    setCurrentHref((c) => {
+      if (window.location.pathname && window.location.pathname !== c) {
+        return window.location.pathname;
+      }
+      return c;
+    });
+  });
   return (
     <div
       className={`dropdown ${
