@@ -11,5 +11,6 @@ const WhatsNew: React.FC<{ open?: boolean }> = ({ open = false }) => {
       </div>
     </div>
   );
+  return whatsNewCard;
 };
 export const WhatsNew;
