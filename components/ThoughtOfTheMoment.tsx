@@ -87,7 +87,7 @@ const ThoughtOfTheMoment: React.FC<{ title: string; message: string }> = ({
         </button>
       </div>
       <div
-        className="tooltip tooltip-bottom tooltip-info text-sm lg:left-2 lg:top-6"
+        className="tooltip tooltip-bottom tooltip-info text-sm lg:left-2 lg:top-6 text-slate-500"
         data-tip="press r to reset (twice!)"
       >
         <Icon id="info" />
