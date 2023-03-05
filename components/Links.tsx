@@ -12,6 +12,7 @@ const initValue: RouteConfig[] = [
   { iconId: "home", href: "/", title: "Home" },
   { iconId: "bars", href: "/testui", title: "Test UI" },
   { iconId: "info", href: "/about", title: "About Us" },
+  { iconId: "couch", href: "/planMyWeekend", title: "Plan My Weekend" },
 ];
 const Links: React.FC<{
   variant?: VariantsType;

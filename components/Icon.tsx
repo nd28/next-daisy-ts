@@ -10,19 +10,19 @@ const Icon: React.FC<{
       {...svgProps}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      viewBox="0 0 24 24"
+      viewBox={getIconD(id).viewBoxSvg ?? "0 0 24 24"}
       className={`stroke-current flex-shrink-0 w-6 h-6 ${
         svgProps?.className ?? ""
       }`}
     >
       {simplePath ? (
-        <path d={getIconD(id)} />
+        <path d={getIconD(id).dPath} />
       ) : (
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
-          d={getIconD(id)}
+          d={getIconD(id).dPath}
         />
       )}
     </svg>
