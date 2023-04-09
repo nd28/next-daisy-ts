@@ -10,6 +10,10 @@ const WhatsNew: React.FC<{ open?: boolean }> = ({ open = false }) => {
           I have recently created this page called{" "}
           <Link href="/planMyWeekend" className="btn-link text-slate-300">
             Plan My Weekend
+          </Link>{" "}
+          and{" "}
+          <Link href="/relation" className="btn-link text-slate-300">
+            About healthy relation
           </Link>
         </p>
 
