@@ -11,7 +11,9 @@ export type IconTypes =
   | "downarrow"
   | "find"
   | "bell"
-  | "couch";
+  | "couch"
+  | "setting"
+  | "app";
 
 const d: Record<IconTypes, string> = {
   info: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z",

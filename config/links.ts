@@ -10,6 +10,6 @@ const links: RouteConfig[] = [
   { iconId: "info", href: "/about", title: "About Us" },
   { iconId: "couch", href: "/planMyWeekend", title: "Plan My Weekend" },
   { iconId: "setting", href: "/settings", title: "Settings" },
-  { iconId: "todo", href: "/todos", title: "ToDo App" },
+  { iconId: "app", href: "/todos", title: "ToDo App" },
 ];
 export default links;
