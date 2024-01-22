@@ -1,19 +1,9 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Icon from "./Icon";
-import { IconTypes } from "../utils/getIcon";
 type VariantsType = "ghost" | "disabled";
-interface RouteConfig {
-  iconId: IconTypes;
-  href: string;
-  title: string;
-}
-const initValue: RouteConfig[] = [
-  { iconId: "home", href: "/", title: "Home" },
-  { iconId: "bars", href: "/testui", title: "Test UI" },
-  { iconId: "info", href: "/about", title: "About Us" },
-  { iconId: "couch", href: "/planMyWeekend", title: "Plan My Weekend" },
-];
+import initValue from "../config/links"
+
 const Links: React.FC<{
   variant?: VariantsType;
   direction?: "start" | "end";
